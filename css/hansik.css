@@ -14,26 +14,25 @@ section{
     display: flex; align-items: center; justify-content: center;
 }
 section .inner {
-  width: 1660px; height: 856px;
+  width: 1660px;
   display: flex; flex-direction: column; justify-content: space-evenly;
   overflow: hidden;
 }
 section .txt {
-  width: 1200px; height: 249px;
+  width: 1200px;
   display: flex; align-items: flex-end; justify-content: space-around;
 }
 section .txt h3 {
-  height: 243px;
   writing-mode: vertical-lr;
   display: flex; align-items: center; justify-content: space-between;
-  font-family: "solmoeKimDaeGeon"; font-size: 60px; font-weight: 400;
+  font-family: "solmoeKimDaeGeon"; font-size: 2.4em; font-weight: 400;
 }
 section .txt h3 >img {
-  width: 48px; height: 48px;
+  width: 25px; height: 25px;
 }
 section .txt >p {
-  width: 1060px; height: 80px;
-  color: #343431; font-family: "GapyeongHanseokbong-M"; font-size: 25px;
+  width: 1060px;
+  color: #343431; font-family: "GapyeongHanseokbong-M"; font-size: 1.3em;
 }
 
 /* page */
@@ -43,9 +42,9 @@ section .txt >p {
 }
 
 #page .main{
-  width: 1178px; height: 738px;
+  width: 100%; height: 100%;
   position: relative;
-  display: flex; align-items: center; flex-direction: column; justify-content: space-between;
+  display: flex; align-items: center; flex-direction: column; justify-content: space-around;
 }
 #page .main p {
   font-family: "GapyeongHanseokbong-M"; font-size: 21px; font-weight: 400; text-align: center;
@@ -55,21 +54,21 @@ section .txt >p {
 .card_all {
   display: flex;
   height: 517px;
-  margin-left: 28px;
+  margin-top: 16px;
 }
 .card_all ul.card {
   width: 100%;
-  display: flex; align-items: center; justify-content: space-evenly;
+  display: flex; align-items: center;
 }
 .card_all ul.card >li {
-  width: 396px; height: 371px;
+  width: 250px; height: 371px;
   border-radius: 30px;
   background: #EEE;
   transition: .9s;
   display: flex; flex-direction: column; align-items: center; justify-content: space-around;
 }
 .card_all ul.card >li >h3 {
-  text-align: center; font-family: "GapyeongHanseokbong-M"; font-size: 26px; font-weight: 400;
+  text-align: center; font-family: "GapyeongHanseokbong-M"; font-size: 1.4em; font-weight: 400;
 }
 .card_all ul.card >li >p {
   color: #343431; text-align: center; font-family: "solmoeKimDaeGeon";
@@ -77,10 +76,10 @@ section .txt >p {
   display: none;
 }
 .card_all ul.card >li >a {
-  width: 181px; height: 45px;
+  width: 181px; height: 40px;
   background: rgba(190, 197, 214, 0.40);
   border-radius: 10px;
- align-items: center; justify-content: center;
+  align-items: center; justify-content: center;
   color: #575757; text-align: center; font-family: "solmoeKimDaeGeon";
   font-size: 15px;
   display: none;
@@ -93,10 +92,10 @@ section .txt >p {
   background: rgba(68, 83, 119, 0.4);
 }
 .card_all ul.card >li >a >i {
-  font-size: 22px; margin-right: 10px;
+  font-size: 16px; margin-right: 10px;
 }
 .card_all ul.card >li.on {
-  height: 517px;
+  height: 430px;
   background: rgb(211, 220, 240);
 }
 .card_all ul.card >li.on >p {
@@ -108,7 +107,7 @@ section .txt >p {
   background-image: url(../images/hansik/sura_bg.png);
 }
 #sura .card_all {
-  width: 2456px;
+  width: 100%;
 }
 
 /* new */
@@ -116,7 +115,7 @@ section .txt >p {
   background-image: url(../images/hansik/new_bg.png);
 }
 #new .card_all {
-  width: 2044px;
+  width: 100%;
 }
 
 /* chu */
@@ -124,7 +123,7 @@ section .txt >p {
   background-image: url(../images/hansik/chu_bg.png);
 }
 #chu .card_all {
-  width: 1632px;
+  width: 100%;
 }
 
 /* medi */
@@ -132,12 +131,12 @@ section .txt >p {
   background-image: url(../images/hansik/medi_bg.png);
 }
 #medi .card_all {
-  width: 2456px ; 
+  width: 100%; 
 }
 
 /* footer */
 footer{
-  height: 100vh;
+  height: 100vh; width: 100vw;
   position: relative;
   background-color: var(--main-color-4);
   background-image: url(../images/hansik/footer_bg.png);
@@ -145,6 +144,7 @@ footer{
   background-position: right bottom;
   background-blend-mode: overlay; 
   color: #eee;
+  display: flex; align-items: center; justify-content: center;
 }
 footer .f_deco{
   position: absolute;
@@ -157,10 +157,8 @@ footer .f_deco img{
   object-fit: cover;
 }
 footer .f_txt{
-  position: absolute;
-  left: 20%;
-  top: 50%;
-  transform: translateY(-50%);
+  display: flex; flex-direction: column; justify-content: center; align-items: center;
+
 }
 footer .f_txt h4::before{
   content: '';
